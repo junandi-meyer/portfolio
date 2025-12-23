@@ -330,7 +330,8 @@
     }
     .contact-box-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        justify-content: center; 
+        gap: 20px;
     }
     .got {
         margin-top: 40px;
@@ -503,7 +504,21 @@
     }
     .contact-box-grid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr; /* This is fine for mobile */
+        width: 100%;
+        max-width: 400px; /* Prevents boxes from becoming too wide on large phones */
+        margin: 30px auto; /* Centers the whole grid block */
+    }
+
+    .contact-sec-box {
+        text-align: center; /* Makes 'Call Me' and 'Chat' look better on mobile */
+    }
+
+    .call-us-contact {
+        justify-content: center; /* Centers the icon and text header */
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
     .input-main {
         display: flex;
@@ -632,4 +647,5 @@
     .about-detail-info::before {
         margin-right: 15px;
     }
+
 }
