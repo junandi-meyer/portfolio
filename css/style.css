@@ -525,7 +525,9 @@ body.dark-mode .hireMe-svg-side {
 .media-main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px; 
+    width: 100%;
 }
 
 .media-icons {
@@ -2035,4 +2037,5 @@ button.bottom-top-button img {
 
 button.bottom-top-button:hover {
     animation: animate-pulse 3s linear infinite;
+
 }
