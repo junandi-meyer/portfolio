@@ -1984,7 +1984,26 @@ ul.slick-dots button {
     top: -11px;
     left: 20px;
 }
+/* Ensure the button behaves exactly like the original link */
+button.aryaBtn {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit; /* Keeps your template's typography */
+    cursor: pointer;      /* Shows the 'hand' icon on hover */
+    outline: none;
+    display: flex;        /* Keeps the text and arrow aligned */
+    align-items: center;
+    gap: 10px;            /* Spacing between 'Send Message' and the arrow icon */
+    transition: all 0.3s ease-in-out;
+}
 
+/* Ensure the hover effect from your template still works */
+button.aryaBtn:hover {
+    /* If your template turns the text a specific color on hover, add it here */
+    opacity: 0.8; 
+    transform: translateY(-2px); /* Common Arya template animation */
+}
 /*-----------------------[ 19.Footer Section CSS ]------------------------*/
 
 footer {
@@ -2040,5 +2059,6 @@ button.bottom-top-button:hover {
     animation: animate-pulse 3s linear infinite;
 
 }
+
 
 
