@@ -101,7 +101,7 @@ $(document).ready(function() {
 /*------------------------------------- Scroll counter -------------------------------------*/
 var counted = 0;
 $(window).on('scroll', function() {
-    var oTop = $('.counter').offset() ? .top - window.innerHeight;
+    var oTop = $('.counter').offset() ?.top - window.innerHeight;
     if (counted === 0 && $(window).scrollTop() > oTop) {
         $('.count').each(function() {
             var $this = $(this),
@@ -264,4 +264,5 @@ function activeMenu() {
     }
 }
 activeMenu();
+
 window.addEventListener("scroll", activeMenu);
